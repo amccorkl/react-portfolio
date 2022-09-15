@@ -1,47 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import NavBar from "./NavBar";
-import Header from "./Header";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+function PortfolioContainer() {
+  const [currentPage, setCurrentPage] = useState('Home');  
+  
+  const renderPage = () => {
+    if (currentPage === "Home") {
+      return <Home />;
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+    if (currentPage === "Projects") {
+      return <Projects />;
+    }
+    return <Resume />;
+  };
+  
+  const handlePageChange = (page) => setCurrentPage(page);
 
-function App() {
   return (
-    <Router>
-      <div className="container">
-        <NavBar />
-        <main className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/About">
-              <About />
-            </Route>
-            <Route exact path="/Contact">
-              <Contact />
-            </Route>
-            <Route exact path="/Projects">
-              <Projects />
-            </Route>
-            <Route path="/Resume">
-              <Resume />
-            </Route>
-            <Route path="*">
-              <Home />
-            </Route>
-          </Switch>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  );
+    <div>
+      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
+
+      {renderPage()}
+    </div>
+  )
+
 }
 
-export default App;
+export default PortfolioContainer;

@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
+// import emailjs from 'emailjs-com';
+// import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
 import { validateEmail } from '../utils/helpers';
+// import '../App.css';
 
 function Contact() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
+  const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -18,8 +22,8 @@ function Contact() {
     // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === 'userName') {
-      setUserName(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
     } else {
       setMessage(inputValue);
     }
@@ -30,57 +34,62 @@ function Contact() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage(`Please enter a valid email address.`);
+      setErrorMessage("Please enter a valid email address.");
       // We want to exit out of this code block if something is wrong so that the user can correct it.
       return;
     }
-    if (!userName) {
-      setErrorMessage(`Please enter your name in the provided space.`);
+    if (!name) {
+      setErrorMessage("Please enter your name in the provided space.");
     }
     if (!message) {
-      setErrorMessage(`Please provide a message in the provided space.`);
+      setErrorMessage("Please provide a message in the provided space.");
     }
+
+    //clear out the input fields 
+    setEmail("");
+    setName("");
+    setMessage("");
+    // setErrorMessage("");
   }
-  alert(`Hello ${userName}`);
-
-  //clear out the input fields 
-  setEmail("");
-  setUserName("");
-  setMessage("");
-  setErrorMessage("");
-
+ 
   return (
-    <div>
-      <p>Hello, {userName}</p>
-      <form className="form">
+    <div className="form container">
+      <h3>Contact Me</h3>
+      <form >
+        
         <input
-          value={email}
-          type="email"
-          name="email"
-          placeholder='email'
-          id='userInput'
-          onChange={handleInputChange} />
-        <input
-          value={userName}
-          type="text"
-          name="userName"
-          placeholder='name'
-          id='userName'
-          onChange={handleInputChange} />
-        <textarea
-          value={message}
-          type="message"
-          name="message"
-          placeholder='message'
-          id='userMessage'
-          onChange={handleInputChange} />
+            value={email}
+            type="email"
+            name="email"
+            placeholder='email'
+            id='userInput'
+            onChange={handleInputChange}
+          />
+          <input
+            value={name}
+            type="text"
+            name="name"
+            placeholder='name'
+            id='name'
+            onChange={handleInputChange}
+          />
+          <textarea
+            value={message}
+            type="message"
+            name="message"
+            placeholder='message'
+            id='message'
+            onChange={handleInputChange}
+          />
         <button type="button" id='submit' onClick={handleFormSubmit}>Submit</button>
+        {errorMessage && (
+          <div>
+            <p className="errorText">{errorMessage}</p>
+          </div>
+        )}
       </form>
-      {errorMessage && (
-        <div>
-          <p className="errorText">{errorMessage}</p>
-        </div>
-      )}
+      
+
     </div>
   );
 };

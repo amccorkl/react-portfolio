@@ -1,4 +1,6 @@
 import React from "react";
+// import "../App.css";
+// import ProfilePic "../../images/profilePic.jpeg";
 
 
 export default function Home() {
@@ -10,9 +12,10 @@ export default function Home() {
       <div className="lower-containter">
         <article className="about-me">
           <br />
-          <h2>Hi, I'm</h2>
+          <h2>Hi, I am </h2>
           <h3>Anne Linger</h3>
           {/* make the title different colors */}
+          {/* <img id="pic" src={ProfilePic} alt="picture of me" /> */}
           <br />
           <p>Add in my intro statement here.</p>
           <br />

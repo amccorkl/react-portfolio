@@ -23,6 +23,25 @@ const About = () => {
           <a href="https://www.linkedin.com/in/annelinger" target="_blank" rel="noreferrer noopener">LinkedIn</a>
         </p>
       </article>
+      <article className="about-education">
+        <div className="card-body">
+          <h2>Education</h2>
+          <div className="grid-container">
+            <div className="school">Denver University</div>
+            <div className="study">Full Stack Web Development</div>
+          </div>
+
+          <div className="grid-container">
+            <div className="school">Colorado Mesa University</div>
+            <div className="study">Masters in Education and Management (Principal License)</div>
+          </div>
+
+          <div className="grid-container">
+            <div className="school">Colorado State University</div>
+            <div className="study">Masters in History</div>
+          </div>
+        </div>
+      </article>
           
     </section>
   );

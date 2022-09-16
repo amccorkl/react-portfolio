@@ -9,8 +9,8 @@ import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 
 function App () {
-  const [currentPage, setCurrentPage] = useState('Home');  
-  
+  const [currentPage, setCurrentPage] = useState('Home');  // "About"
+  // home is the default page, should I change it to About since its basically the same?
   const renderPage = () => {
     if (currentPage === "Home") {
       return <Home />;
@@ -33,12 +33,12 @@ function App () {
     <div>
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
-      {renderPage()}
+        {renderPage()}
       </main>
       <br />
       <Footer />
     </div>
-  )
+  );
 
 }
 

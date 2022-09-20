@@ -2,11 +2,14 @@ import React from 'react';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+// import "../App.css";
+// import "../index.css";
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <footer className="d-flex justify-content-space-around align-items-center">
+      <footer className="">
         <ul>
           <li className='icon'>
             <a href="https://github.com/amccorkl" target="_blank" rel="noreferrer noopener">Github Repository

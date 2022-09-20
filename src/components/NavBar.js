@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/header.css";
 
 function NavBar({ currentPage, handlePageChange }) {
   return (
@@ -14,14 +15,8 @@ function NavBar({ currentPage, handlePageChange }) {
           >
             About
           </a>
-        </li>
-          {/* <li className="nav-item">
-            <a href="#home" onClick={() => handlePageChange("Home")}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-            >
-              Home
-            </a>
-          </li> */}
+          </li>
+          
           <li className="nav-item">
           <a
             href="#contact"

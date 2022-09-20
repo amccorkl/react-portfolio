@@ -5,7 +5,7 @@ import Pic from '../images/profilepic.jpeg';
 const About = () => {
   return (
     <div className="container-fluid">
-      <div classname='row justify-content-evenly'>
+      <div className='row justify-content-evenly'>
         <div className="col">
           <div className="card">
 

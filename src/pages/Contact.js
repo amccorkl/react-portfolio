@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 // import emailjs from 'emailjs-com';
 import { validateEmail } from '../utils/helpers';
+import "../App.css";
+import "../index.css";
+import "../styles/contact.css";
 
 
 function Contact() {
@@ -69,7 +72,7 @@ function Contact() {
               name="email"
               placeholder='email'
               id='userInput'
-              required='true'
+              required
               onChange={handleInputChange}
             />
             <input
@@ -78,7 +81,7 @@ function Contact() {
               name="name"
               placeholder='name'
               id='name'
-              required='true'
+              required
               onChange={handleInputChange}
             />
             <textarea
@@ -87,7 +90,7 @@ function Contact() {
               name="message"
               placeholder='message'
               id='message'
-              required='true'
+              required
               onChange={handleInputChange}
             />
           <button className='btn' type="button" id='submit' onClick={handleFormSubmit}>Submit</button>

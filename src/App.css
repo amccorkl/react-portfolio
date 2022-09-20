@@ -8,9 +8,7 @@
 }
 
 :root {
-  --header-bg: #095cf7;
-  --headerC-color: white;
-  --body-bg: rgb(228, 225, 225);
+  --body-bg: rgb(201, 197, 197);
   --body-color: rgb(42, 41, 41);
   --error-text: rgb(196, 6, 6);
   --links: rgb(143, 7, 7);
@@ -20,18 +18,13 @@
 body { 
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-}/* @import-normalize; */
+  /* background-color: var(--body-bg); */
+}
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
+main {
+  background-color: var(--body-bg)
+}
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+
+
+

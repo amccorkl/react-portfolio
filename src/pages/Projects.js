@@ -2,10 +2,9 @@ import React from "react";
 import ConcertConcierge from "../images/concert-concierge.png";
 import CacheFoodDecisions from "../images/login-page.jpeg";
 import ProjectCards from "../components/ProjectCards"
-
-
-
- const projects = [
+ 
+const Projects = () => {
+  const projects = [
     {
       id: 1,
       title: "project1",
@@ -42,7 +41,6 @@ import ProjectCards from "../components/ProjectCards"
       // image: 
     }
   ];
-  const Projects = () => {
     return (
       <div className="main-container">
         <div className="row">
@@ -75,5 +73,5 @@ import ProjectCards from "../components/ProjectCards"
     );
   };
 
-export default Projects();
+export default Projects;
 

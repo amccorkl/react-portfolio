@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.a9001a7f.css",
+    "main.js": "/react-portfolio/static/js/main.2d550c47.js",
+    "static/media/profilepic.jpeg": "/react-portfolio/static/media/profilepic.c82dd4f3cda47808d4ac.jpeg",
+    "static/media/concert-concierge.png": "/react-portfolio/static/media/concert-concierge.61c7a90e775a48f0249e.png",
+    "static/media/insomnia-all-users.png": "/react-portfolio/static/media/insomnia-all-users.164182e5a0e80fbc5571.png",
+    "static/media/login-page.jpeg": "/react-portfolio/static/media/login-page.628ad491d0a6ab06ea8f.jpeg",
+    "index.html": "/react-portfolio/index.html",
+    "main.a9001a7f.css.map": "/react-portfolio/static/css/main.a9001a7f.css.map",
+    "main.2d550c47.js.map": "/react-portfolio/static/js/main.2d550c47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9001a7f.css",
+    "static/js/main.2d550c47.js"
+  ]
+}

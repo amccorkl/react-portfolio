@@ -1,0 +1,9 @@
+{
+  "short_name": "Portfolio",
+  "name": "Anne Linger | Full Stack Web Developer",
+  
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#095cf7"
+}

@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About"
-import Projects from "./components/pages/Projects";
-import Contact from "./components/pages/Contact";
-import Resume from "./components/pages/Resume";
+// import Home from "./pages/Home";
+import About from "./pages/About"
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 function App () {
-  const [currentPage, setCurrentPage] = useState('Home');  // "About"
+  const [currentPage, setCurrentPage] = useState('About');  // "About"
   // home is the default page, should I change it to About since its basically the same?
   const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
-    }
+    // if (currentPage === "Home") {
+    //   return <Home />;
+    // }
     if (currentPage === "About") {
       return <About />;
     }

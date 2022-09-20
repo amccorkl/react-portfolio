@@ -1,5 +1,5 @@
 import React from 'react';
-// import Projects from '../components/pages/Projects';
+// import Projects from '../pages/Projects';
 import '../App.css';
 
 function ProjectCards(props) {

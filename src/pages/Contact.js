@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // import Form from "react-bootstrap/Form";
 // import Button from "react-bootstrap/Button";
 import { validateEmail } from '../utils/helpers';
-// import '../App.css';
+
 
 function Contact() {
   // Create state variables for the fields in the form
@@ -22,10 +22,13 @@ function Contact() {
     // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'email') {
       setEmail(inputValue);
+      console.log(inputValue);
     } else if (inputType === 'name') {
       setName(inputValue);
+      console.log(inputValue);
     } else {
       setMessage(inputValue);
+      console.log(inputValue);
     }
   };
 
@@ -52,6 +55,10 @@ function Contact() {
     // setErrorMessage("");
   }
  
+  // const sendEmail = (e) => {
+  //   emailjs.send('')
+  // }
+
   return (
     <div className="form container">
       <h3>Contact Me</h3>

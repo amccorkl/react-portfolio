@@ -28,7 +28,7 @@ Screenshots of the application
 
 ## Questions and Links
 
-View the deployed application on [GitHub Pages]()
+View the deployed application on [GitHub Pages](https://amccorkl.github.io/react-portfolio/)
 
 View the repository in [GitHub](https://github.com/amccorkl/react-portfolio)
 

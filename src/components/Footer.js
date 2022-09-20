@@ -1,8 +1,38 @@
 import React from 'react';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="d-flex justify-content-center align-items-center">Created in 2022, annefmccorkle@gmail.com</footer>
+    <div className="footer-container">
+      <footer className="d-flex justify-content-space-around align-items-center">
+        <ul>
+          <li className='icon'>
+            <a href="https://github.com/amccorkl" target="_blank" rel="noreferrer noopener">Github Repository
+              {/* <FontAwesomeIcon={faGithub} /> */}
+            </a>
+          </li>
+
+          <li className='icon'>
+            <a href="https://www.linkedin.com/in/annelinger" target="_blank" rel="noreferrer noopener">LinkedIn
+            {/* <FontAwesomIcon icon={faLinkedin} />*/}
+            </a>
+          </li>
+          
+          <li className='icon'>
+            <a href="mailto:annefmccorkle@gmail.com">Email
+            {/* <FontAwesomeIcon icon={faEnvelope} />*/}
+            </a>
+          </li>
+        </ul>
+        
+        <p className='copyright'>
+        &copy; 2022 by Anne Linger
+        </p>
+      </footer>
+
+    </div>
   );
 };
 

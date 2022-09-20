@@ -11,23 +11,15 @@ const About = () => {
 
             <div className="card-body">
               <div className="row card-row col-4">
-                <img className="picture" src={Pic} alt="picture of me" id="picture" />
+                <img className="picture" src={Pic} alt="headshot" id="picture" />
 
               </div>
             </div>
 
             <div className="card-body">
               <div className="row card-row">
-                <p className="para-aboutMe">Where I say stuff about me
+                <p className="para-aboutMe">I am a 20 year veteran teacher, instructional coach, problem solver, and now creator of code. I thrive off of pushing myself and helping others. This foray into full stack coding provides ample opportunities for growth. I can't wait to join an organization that helps support people through IT and software development.
                 </p>
-              <p>
-                <a href="http://www.github.com/amccorkl" target="_blank" rel="noreferrer noopener">
-                  Github Repository
-                </a>
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/in/annelinger" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-              </p>
               </div>
             </div>
 

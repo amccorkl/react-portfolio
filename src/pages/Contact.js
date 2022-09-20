@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 // import emailjs from 'emailjs-com';
-// import Form from "react-bootstrap/Form";
-// import Button from "react-bootstrap/Button";
 import { validateEmail } from '../utils/helpers';
 
 
@@ -60,41 +58,46 @@ function Contact() {
   // }
 
   return (
-    <div className="form container">
-      <h3>Contact Me</h3>
-      <form >
-        
-        <input
-            value={email}
-            type="email"
-            name="email"
-            placeholder='email'
-            id='userInput'
-            onChange={handleInputChange}
-          />
-          <input
-            value={name}
-            type="text"
-            name="name"
-            placeholder='name'
-            id='name'
-            onChange={handleInputChange}
-          />
-          <textarea
-            value={message}
-            type="message"
-            name="message"
-            placeholder='message'
-            id='message'
-            onChange={handleInputChange}
-          />
-        <button type="button" id='submit' onClick={handleFormSubmit}>Submit</button>
-        {errorMessage && (
-          <div>
-            <p className="errorText">{errorMessage}</p>
-          </div>
-        )}
-      </form>
+    <div className="form-container">
+      <h3 className="form-title">Contact Me</h3>
+      <p>Questions? I'd love to hear from you.</p>
+      <div className="contact-form">
+        <form >
+            <input
+              value={email}
+              type="email"
+              name="email"
+              placeholder='email'
+              id='userInput'
+              required='true'
+              onChange={handleInputChange}
+            />
+            <input
+              value={name}
+              type="text"
+              name="name"
+              placeholder='name'
+              id='name'
+              required='true'
+              onChange={handleInputChange}
+            />
+            <textarea
+              value={message}
+              type="message"
+              name="message"
+              placeholder='message'
+              id='message'
+              required='true'
+              onChange={handleInputChange}
+            />
+          <button className='btn' type="button" id='submit' onClick={handleFormSubmit}>Submit</button>
+          {errorMessage && (
+            <div>
+              <p className="errorText">{errorMessage}</p>
+            </div>
+          )}
+        </form>
+      </div>
       
 
     </div>

@@ -3,16 +3,19 @@ import React from 'react';
 import '../App.css';
 
 function ProjectCards(props) {
+
+  const project = props.project;
+
    return (
-     <div className={`grid-item gallery ${props.id}`}>
-       <img src={props.image} alt={props.title} className="gallery-img" />
+     <div className={`grid-item gallery ${project.id}`}>
+       <img src={project.image} alt={project.title} className="gallery-img" />
        <div className="description">
-         <h4>{props.title}</h4>
+         <h4>{project.title}</h4>
        </div>
 
        <div className="links">
-         <a href={props.github} target="_blank" rel="noreferrer" alt="Github Repository">Github Repository</a>
-         <a href={props.deployed} target="_blank" rel="noreferrer" alt="Deployed app">Deployed App</a>
+         <a href={project.github} target="_blank" rel="noreferrer" alt="Github Repository">Github Repository</a>
+         <a href={project.deployed} target="_blank" rel="noreferrer" alt="Deployed app">Deployed App</a>
        </div>
    </div>
    );

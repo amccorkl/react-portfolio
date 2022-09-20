@@ -12,19 +12,18 @@ function App () {
   const [currentPage, setCurrentPage] = useState('About');  // "About"
   // home is the default page, should I change it to About since its basically the same?
   const renderPage = () => {
-    // if (currentPage === "Home") {
-    //   return <Home />;
-    // }
-    if (currentPage === "About") {
-      return <About />;
-    }
     if (currentPage === "Contact") {
       return <Contact />;
     }
-    if (currentPage === "Projects") {
+    else if (currentPage === "Projects") {
       return <Projects />;
     }
-    return <Resume />;
+    else if (currentPage === "Resume") {
+      return <Resume />;
+    }
+    else if (currentPage === "About") {
+      return <About />;
+    }
   };
   
   const handlePageChange = (page) => setCurrentPage(page);

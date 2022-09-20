@@ -1,30 +1,32 @@
 import React from "react";
 import ConcertConcierge from "../images/concert-concierge.png";
 import CacheFoodDecisions from "../images/login-page.jpeg";
+import Insomnia from "../images/insomnia-all-users.png";
 import ProjectCards from "../components/ProjectCards"
+import "../styles/projects.css";
  
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "project1",
-      repo: "",
-      deployed: "",
+      title: "Concert Concierge",
+      repo: "https://github.com/amccorkl/Concert_Concierge/",
+      deployed: "https://amccorkl.github.io/Concert_Concierge/",
       image: ConcertConcierge,
     },
     {
       id: 2,
-      title: "project2",
-      repo: "",
-      deployed: "",
+      title: "Cache Food Decisions",
+      repo: "https://github.com/amccorkl/cache-food-decisions",
+      deployed: "http://damp-harbor-49836.herokuapp.com/",
       image: CacheFoodDecisions,
     },
     {
       id: 3,
-      title: "",
-      repo: "",
-      deployed: "",
-      // image: 
+      title: "Social Networking API",
+      repo: "https://github.com/amccorkl/Social-NetWorking-API",
+      deployed: "backend only",
+      image: Insomnia,
     },
     {
       id: 4,
@@ -50,7 +52,7 @@ const Projects = () => {
                 <div className="header">
                   <h3>Projects</h3>
                 </div>
-                  <div className="grid-container vertical-line">
+                  <div className="container-projects">
                     {projects.map((project) => (
                       <ProjectCards
                         id={project.id}

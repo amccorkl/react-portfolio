@@ -1,0 +1,13 @@
+.container-projects {
+  display: flex;
+  flex: 2 60%;
+  margin: 3.5%;
+  line-height:1.5;
+
+}
+
+.item-gallery {
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0.5em
+}

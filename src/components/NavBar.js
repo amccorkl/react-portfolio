@@ -47,7 +47,7 @@ function NavBar({ currentPage, handlePageChange }) {
             Resume
           </a>
         </li>
-        </ul>
+      </ul>
       </header>
    )
  }

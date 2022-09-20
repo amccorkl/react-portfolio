@@ -7,6 +7,7 @@
 .form-title {
   padding: 1rem;
   font-weight: bolder;
+  text-align: center;
 }
 
 .contact-form {
@@ -15,5 +16,16 @@
 
 input[type="text"], input[type="email"] {
   width: 100%;
-  height: 25px;
+  height: 50px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+}
+
+#submit {
+  border: black solid 1px;
+  font-weight: bolder;
+  background-color: #0d6dfdb8;
 }

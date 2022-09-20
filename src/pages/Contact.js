@@ -62,7 +62,7 @@ function Contact() {
 
   return (
     <div className="form-container">
-      <h3 className="form-title">Contact Me</h3>
+      <h2 className="form-title">Contact Me</h2>
       <p>Questions? I'd love to hear from you.</p>
       <div className="contact-form">
         <form >

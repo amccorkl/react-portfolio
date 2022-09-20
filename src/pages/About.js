@@ -1,18 +1,19 @@
 import React from 'react';
 import Pic from '../images/profilepic.jpeg';
+import "../styles/about.css";
 
 
 const About = () => {
   return (
     <div className="container-fluid">
-      <div className='row justify-content-evenly'>
+      <h2 className="title-name">Hi, I'm Anne.</h2>
+      <div className='row'>
         <div className="col">
           <div className="card">
 
             <div className="card-body">
-              <div className="row card-row col-4">
+              <div className="row card-row">
                 <img className="picture" src={Pic} alt="headshot" id="picture" />
-
               </div>
             </div>
 
@@ -25,7 +26,7 @@ const About = () => {
 
             <div className="card-body">
               <div className="row card-row">
-                <h2 className="edu">Education</h2>
+                <h2 className="edu title-name">Education</h2>
                 <br />
                 <div className="grid-container">
                   

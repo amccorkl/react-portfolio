@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/resume.css";
 
 const Resume = () => {
   return (
@@ -8,7 +9,7 @@ const Resume = () => {
           <div className="card">
             <div className="header">
               <h2>Download Resume: 
-                <a href="https://drive.google.com/file/d/1BXoH7kaNeVII01wTmpwzVAbuC1dGlDdU/view?usp=sharing">Anne Linger</a>
+                <a href="https://drive.google.com/file/d/1BXoH7kaNeVII01wTmpwzVAbuC1dGlDdU/view?usp=sharing"> Anne Linger</a>
               </h2>
             </div>
           </div>

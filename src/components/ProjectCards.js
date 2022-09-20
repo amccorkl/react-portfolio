@@ -1,13 +1,10 @@
 import React from 'react';
-// import Projects from '../pages/Projects';
 import '../App.css';
+import "../index.css";
 
-function ProjectCards(props) {
-
-  
-
+function ProjectCards(props) { 
    return (
-     <div className={`grid-item gallery ${props.id}`}>
+     <div className={`item-gallery ${props.id}`}>
        <img src={props.image} width="250px" alt={props.title} className="gallery-img" />
        <div className="description">
          <h4>{props.title}</h4>
